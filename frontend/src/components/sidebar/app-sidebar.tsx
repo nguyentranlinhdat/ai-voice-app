@@ -2,6 +2,7 @@
 import { UserButton } from "@daveyplate/better-auth-ui";
 import { Sparkles, User } from "lucide-react";
 import Link from "next/link";
+import Credits from "~/components/sidebar/credits";
 import MobileSidebarClose from "~/components/sidebar/mobile-sidebar-close";
 import SidebarMenuItems from "~/components/sidebar/sidebar-menu-items";
 import {
@@ -43,24 +44,26 @@ export default async function AppSidebar() {
       </SidebarContent>
       <SidebarFooter className="bg-muted/30 border-t p-3">
         <div className="mb-3 flex w-full items-center justify-center gap-2 text-xs">
-          <UserButton
-            variant="outline"
-            className="border-muted-foreground/20 hover:border-primary/50 w-full transition-colors"
-            disableDefaultLinks={true}
-            additionalLinks={[
-              {
-                label: "Customer Portal",
-                href: "/dashboard/customer-poral",
-                icon: <User className="h-4 w-4" />,
-              },
-              {
-                label: "Settings",
-                href: "/dashboard/settings",
-                icon: <User className="h-4 w-4" />,
-              },
-            ]}
-          ></UserButton>
+          <Credits></Credits>
         </div>
+
+        <UserButton
+          variant="outline"
+          className="border-muted-foreground/20 hover:border-primary/50 w-full transition-colors"
+          disableDefaultLinks={true}
+          additionalLinks={[
+            {
+              label: "Customer Portal",
+              href: "/dashboard/customer-poral",
+              icon: <User className="h-4 w-4" />,
+            },
+            {
+              label: "Settings",
+              href: "/dashboard/settings",
+              icon: <User className="h-4 w-4" />,
+            },
+          ]}
+        ></UserButton>
       </SidebarFooter>
     </Sidebar>
   );
