@@ -5,6 +5,7 @@ import Link from "next/link";
 import Credits from "~/components/sidebar/credits";
 import MobileSidebarClose from "~/components/sidebar/mobile-sidebar-close";
 import SidebarMenuItems from "~/components/sidebar/sidebar-menu-items";
+import Upgrade from "~/components/sidebar/upgrade";
 import {
   Sidebar,
   SidebarContent,
@@ -45,6 +46,7 @@ export default async function AppSidebar() {
       <SidebarFooter className="bg-muted/30 border-t p-3">
         <div className="mb-3 flex w-full items-center justify-center gap-2 text-xs">
           <Credits></Credits>
+          <Upgrade></Upgrade>
         </div>
 
         <UserButton
@@ -54,7 +56,7 @@ export default async function AppSidebar() {
           additionalLinks={[
             {
               label: "Customer Portal",
-              href: "/dashboard/customer-poral",
+              href: "/dashboard/customer-portal",
               icon: <User className="h-4 w-4" />,
             },
             {

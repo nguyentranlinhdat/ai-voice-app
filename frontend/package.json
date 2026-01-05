@@ -24,6 +24,8 @@
     "@better-auth/passkey": "^1.4.8",
     "@daveyplate/better-auth-ui": "^3.3.9",
     "@hookform/resolvers": "^5.2.2",
+    "@polar-sh/better-auth": "^1.6.3",
+    "@polar-sh/sdk": "^0.42.1",
     "@prisma/client": "^6.19.1",
     "@radix-ui/react-dialog": "^1.1.15",
     "@radix-ui/react-separator": "^1.1.8",
